@@ -1,0 +1,164 @@
+@CHARSET "UTF-8";
+.main-wrap {
+    margin: 0 auto;
+    width: 1180px;
+}
+.main_left {
+    float: left;
+    width: 880px;
+}
+.searchboxinput {
+    padding: 9px 5px 8px 5px;
+    position: relative;
+    height: 52px;
+    background: #f0f0f0;
+    border-top: 2px solid #388ae3;
+    z-index: 999;
+}
+ul, ol, li {
+    list-style: none;
+}
+label {
+    cursor: default;
+}
+.s-inputbox {
+    float: left;
+}
+searchboxinput .s-inputbox .s-input {
+    font-size: 14px;
+    width: 120px;
+    padding: 7px 34px 7px 8px;
+    border-radius: 0;
+    box-shadow: none;
+    border-color: #cdcccc;
+}
+.s-inputbox .s-input {
+    border-radius: 3px;
+    float: left;
+    font-size: 14px;
+    border: #c7d1e4 1px solid;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 7px 32px 7px 8px;
+    width: 188px;
+    color: #999;
+    box-shadow: .5px 1px 3px #d2d7e1 inset;
+}
+.s-inputbox .city_ico {
+    background: #fff url("img/img.png") -314px -127px no-repeat;
+    margin: 7px 15px 0 -30px;
+    width: 22px;
+    float: left;
+    height: 21px;
+    display: inline;
+}
+a {
+    outline: 0;
+    blr: expression(this.onFocus=this.blur());
+}
+a {
+    color: #555;
+    text-decoration: none;
+}
+.searchboxinput .s-inputtime .kalven-dp {
+    width: 164px;
+    height: 22px;
+    line-height: 22px;
+    padding: 6px 0;
+    border-color: #cdcccc;
+    box-shadow: none;
+}
+.kalven-dp .dp-info {
+    position: absolute;
+    top: 4px;
+    right: 3px;
+    height: 18px;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: right;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.kalven-dp .dp-info b {
+    float: right;
+    display: inline;
+    width: 24px;
+    height: 21px;
+    background: url(img/qc.gif) 3px 2px no-repeat;
+}
+.kalven-dp .dp-info .dp-text {
+    float: right;
+    display: inline;
+    color: #666;
+}
+.searchboxinput .s-inputtime .kalven-dp .textbox {
+    border: 0;
+    background: 0;
+    font-size: 14px;
+    width: 150px;
+    padding-top: 0;
+    margin: 0;
+    padding-left: 8px;
+    height: 22px;
+    line-height: 22px;
+}
+.searchboxinput .s-inputtime .kalven-dp .q-datepicker {
+    top: 28px;
+}
+.s-inputtime .t-datepicker {
+    top: 33px;
+    width: 486px;
+    z-index: 9999;
+}
+.searchboxinput ul li.li-btn {
+    padding-left: 18px;
+}
+.btn_b110 {
+    background-position: -1px -286px;
+    border: 0;
+    width: 110px;
+    height: 36px;
+    line-height: 34px;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
