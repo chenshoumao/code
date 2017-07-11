@@ -1,0 +1,78 @@
+.layout-header {
+    border-bottom: 0px solid #005bc1;
+    background-color: #005bc1;
+}
+.layout-header {
+    position: relative;
+    border-bottom: 0px solid #005bc1;
+    height: 45px;
+    background-color: #005bc1;
+    z-index: 1000;
+}
+.header-logo {
+    margin-left: 10px;
+    color: #fff;
+    line-height: 45px;
+    font-size: 16px;
+}
+.header-menu-btn {
+    display: none;
+    float: right;
+    color: #fff;
+    width: 40px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 14px;
+}
+.header-bar {
+    float: right;
+    color: #fff;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+}
+.header-bar li {
+    float: left;
+}
+.header-bar li a {
+    margin: 0 10px;
+    color: #fff;
+}
+.layout-side {
+    width: 18%;
+    color: #c2c2c2;
+    z-index: 999;
+    border-right: 1px solid #ddd;
+    float: left;
+}
+.LeftMenuTitle{
+	color: #333;
+    background: #f2f2f2;
+    border-bottom: 1px solid #e5e5e5;
+    height: 39px;
+    line-height: 39px;
+    padding-left: 15px;
+}
+.layout-main{
+    width: 80%;float: right;padding-top: 30px;
+}
+.tab-li{float: left;width: 100%}
+.tab-li>li{padding:8px 20px;float: left; background-color: #005bc1;color: #fff;font-size: 14px;border: 1px solid #fff}
+.tab-li>li>a{text-align: center;color: #fff!important;font-size: 14px}
+.layout-form{display: none;}
+.layout-tab{width: 100%;float: left;margin-top: 20px;}
+.layout-tab tr th{background-color:#005bc1;line-height: 40px;color: #fff;text-align: center;font-size: 14px;border: 1px solid #ccc }
+.layout-tab tr td{line-height: 22px;color: #888;line-height: 36px;text-align: center;font-size: 14px;border: 1px solid #ccc}
+.layout-tab tr td .edit-btn{line-height: 24px;background-color: #999;color: #fff;font-size: 14px;text-align: center;padding: 3px 8px;border-radius: 3px;-webkit-border-radius:3px;-moz-border-radius:3px; }
+.pages{width:100%;height: 44px;line-height: 44px;float: left;text-align:right;margin-bottom: 50px;margin-top: 20px;text-align: center;}
+.pages p{font-size: 14px;}
+.pages p a{padding:0 5px;}
+.pages p span{padding:0 15px;color: #333;}
+.pages p .now{color:#005bc1;border:0;}
+.pages input{width: 16px;height: 16px;text-align: center;margin: 0 5px;border:1px solid #ccc;padding: 0;color: #333;}
+/*list*/
+.list-tab{display: none;width: 100%;float: left;margin-top: 20px;}
+.art-new .list-item{float: left;width: 100%;}
+.art-new .list-item label{float: left;width: 80px;float:left;text-align: right;line-height: 30px;margin-right: 20px;margin-bottom: 10px;}
+.art-new .list-item input[type="text"]{float: left;width: 300px;line-height: 22px;padding: 3px 10px;border: 1px solid #dedede;color:#666;float: left;}
+.art-new .list-item textarea{border: 1px solid #dedede;width: 300px;padding: 3px 10px;resize:none;}

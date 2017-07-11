@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><portlet-properties>
+    <portlet name="PersonalSpaceCsm">
+        <property>
+            <name>DEFAULT_PAGE</name>
+            <value>/_PersonalSpaceCsm/jsp/html/PersonalSpaceCsmPortletView.jsp</value>
+        </property>
+    </portlet>
+</portlet-properties>

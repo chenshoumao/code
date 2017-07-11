@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" id="com.ibm.myfavorite.MyfavoritePortlet.fe1172c865">
+	<portlet>
+		<portlet-name>Myfavorite</portlet-name>
+		<display-name>Myfavorite</display-name>
+		<display-name xml:lang="zh">Myfavorite</display-name>
+		<portlet-class>com.ibm.myfavorite.MyfavoritePortlet</portlet-class>
+		<init-param>
+			<name>wps.markup</name>
+			<value>html</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<supported-locale>zh</supported-locale>
+		<resource-bundle>com.ibm.myfavorite.nl.MyfavoritePortletResource</resource-bundle>
+		<portlet-info>
+			<title>Myfavorite</title>
+			<short-title>Myfavorite</short-title>
+			<keywords>Myfavorite</keywords>
+		</portlet-info>
+	</portlet>
+	<default-namespace>http://Myfavorite/</default-namespace>
+</portlet-app>

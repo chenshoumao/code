@@ -1,0 +1,49 @@
+{
+"intranet":
+	{	"intra_Investment1":
+		{
+			"intra_Investment":"intra_Investment_jiaotongyunshuju"
+		},
+		"intra_Policiesandregulations":
+		{	
+			"Traffic bureau":"intra_Policies and regulations_jiaotongyunshuju"
+		},
+		"intra_Work_Instructions":
+		{
+			"Traffic bureau":"intra_Work_Instructions_jiaotongyunshuju"
+		},
+		"intra_public_Information":
+		{
+			"Traffic bureau":"intra_public_Information_jiaotongyunshuju"
+		},
+		"intra_HomePage":
+		{
+			"Traffic bureau":"intra_HomePage_jiaotongyunshuju"
+		}
+	},
+"extranet":
+	{
+		"extra_Work_Instructions":
+		{
+			"Traffic bureau":"extra_banshizhiyin_jiaotongyunshuju"
+		},
+
+		"extra_Policiesandregulations":
+		{
+			"Traffic bureau":"extra_zhengcefagui_transport"
+		},
+		"extra_Investment":
+		{
+			"Traffic bureau":"extra_Investment_jiaotongyunshuju"
+		},
+		"extra_public_Information":
+		{
+			"Traffic bureau":"extra_xinxigongkai_jiaotongyunshuju"
+		},
+		"extra_HomePage":
+		{
+			"Traffic bureau":"extra_shouye_jiaotongyunshuju",
+			"111":"ggggg"
+		}
+	}
+}

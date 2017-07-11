@@ -1,0 +1,14 @@
+eclipse.preferences.version=1
+encoding//WebRoot/ceshi.jsp=UTF-8
+encoding//WebRoot/js/jquery.uploadify.js=utf-8
+encoding//WebRoot/jsp/bootstrap/MyJsp.jsp=utf-8
+encoding//WebRoot/show.jsp=UTF-8
+encoding//src/com/utils/Img.java=gb2312
+encoding//src/com/utils/RandomNum.java=UTF-8
+encoding//src/com/utils/ReadFiles.java=gb2312
+encoding//src/servlet/CreatePhoto.java=UTF-8
+encoding//src/servlet/Delete.java=UTF-8
+encoding//src/servlet/ShowDetail.java=gb2312
+encoding//src/servlet/ShowImg.java=utf-8
+encoding//src/servlet/Upload.java=UTF-8
+encoding/<project>=UTF-8

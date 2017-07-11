@@ -1,0 +1,21 @@
+{"obj":
+   {
+    "systemEnName":"hrxitong",
+    "systemCnName":"HR系统",
+    "data":[
+           {
+		"title":"张XX待审批0",
+		"receiveTime":"2017-01-01 11:01:59",
+		"pendingName":"张XX",
+		"url":"http://localhost:8080/ToDo/todo/turnToDetail.action"
+	    },
+	    {
+		"title":"李XX待审批1",
+		"receiveTime":"2016-01-03 11:01:59",
+		"pendingName":"李XX",
+		"url":"ttp://localhost:8080/ToDo/todo/turnToDetail.action"
+	    }],
+    "count":"2",
+"pageUrl":"http://www.HR.com/daiban/list"
+}
+}

@@ -1,0 +1,35 @@
+{"hr":
+	{
+		"EnName":"systemEnName",
+		"CnName":"systemCnName",
+		"sysUrl":"http://localhost:8080/ToDo/hr.json",
+		"jsonroot":"obj",
+		"jsondata":"data",
+		"todomap":
+			{"title":"title",
+			"receiveTime":"receiveTime",
+			"pendingName":"pendingName",
+			"todoUrl":"url"
+			},
+		"countmap":
+			{"sysCount":"count",
+			"sysListUrl":"pageUrl"}
+},
+		
+
+"oa":{	
+		"EnName":"systemEnName",
+		"CnName":"systemCnName",
+		"sysUrl":"http://localhost:8080/ToDo/oa.json",
+		"jsonroot":"obj",
+		"jsondata":"data",
+		"todomap":{
+			"title":"title",
+			"receiveTime":"receiveTime",
+			"pendingName":"pendingName",
+			"todoUrl":"url"},
+		"countmap":{
+			"sysCount":"count",
+			"sysListUrl":
+			"pageUrl"}
+}}

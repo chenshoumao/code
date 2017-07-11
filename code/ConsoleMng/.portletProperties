@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><portlet-properties>
+    <portlet name="ConsoleMng">
+        <property>
+            <name>DEFAULT_PAGE</name>
+            <value>/_ConsoleMng/jsp/html/ConsoleMngPortletView.jsp</value>
+        </property>
+    </portlet>
+</portlet-properties>

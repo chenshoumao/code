@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" id="com.solar.picturemore.PictureMorePortlet.bdaaab3085">
+	<portlet>
+		<portlet-name>PictureMore</portlet-name>
+		<display-name>PictureMore</display-name>
+		<display-name xml:lang="zh">PictureMore</display-name>
+		<portlet-class>com.solar.picturemore.PictureMorePortlet</portlet-class>
+		<init-param>
+			<name>wps.markup</name>
+			<value>html</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<supported-locale>zh</supported-locale>
+		<resource-bundle>com.solar.picturemore.nl.PictureMorePortletResource</resource-bundle>
+		<portlet-info>
+			<title>PictureMore</title>
+			<short-title>PictureMore</short-title>
+			<keywords>PictureMore</keywords>
+		</portlet-info>
+	</portlet>
+	<default-namespace>http://PictureMore/</default-namespace>
+</portlet-app>

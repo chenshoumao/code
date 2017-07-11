@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><portlet-properties>
+    <portlet name="DataMessage">
+        <property>
+            <name>DEFAULT_PAGE</name>
+            <value>/_DataMessage/jsp/html/DataMessagePortletView.jsp</value>
+        </property>
+    </portlet>
+</portlet-properties>

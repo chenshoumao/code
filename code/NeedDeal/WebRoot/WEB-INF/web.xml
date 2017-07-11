@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>
+  <servlet>
+    <description>待办数据接口</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NeeddealAction</servlet-name>
+    <servlet-class>com.need.com.NeeddealAction</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>NeeddealAction</servlet-name>
+    <url-pattern>/servlet/NeeddealAction</url-pattern>
+  </servlet-mapping>	
+  
+  
+  <servlet>
+    <description>已办数据接口</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>dealedAction</servlet-name>
+    <servlet-class>com.need.com.DealedAction</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>dealedAction</servlet-name>
+    <url-pattern>/servlet/dealedAction</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description>待阅数据接口</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ToReadAction</servlet-name>
+    <servlet-class>com.need.com.ToReadAction</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ToReadAction</servlet-name>
+    <url-pattern>/servlet/toReadAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>已阅数据接口</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>readedAction</servlet-name>
+    <servlet-class>com.need.com.ReadedAction</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <description></description>
+    <display-name>getLink</display-name>
+    <servlet-name>getLink</servlet-name>
+    <servlet-class>com.need.com.getLink</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getLink</servlet-name>
+    <url-pattern>/getLink</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>GetPendingNum</servlet-name>
+    <servlet-class>com.need.com.GetPendingNum</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetPendingNum</servlet-name>
+    <url-pattern>/getPendingNum</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>GetPendList</servlet-name>
+    <servlet-class>com.need.com.GetPendList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetPendList</servlet-name>
+    <url-pattern>/getPendList</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>GetHaveList</servlet-name>
+    <servlet-class>com.need.com.GetHaveList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetHaveList</servlet-name>
+    <url-pattern>/getHaveList</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>GetMeetingList</servlet-name>
+    <servlet-class>com.need.com.GetMeetingList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetMeetingList</servlet-name>
+    <url-pattern>/getMeetingList</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>readedAction</servlet-name>
+    <url-pattern>/servlet/readedAction</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

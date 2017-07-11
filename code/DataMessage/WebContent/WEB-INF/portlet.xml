@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" id="com.ibm.datamessage.DataMessagePortlet.4676039665">
+	<portlet>
+		<portlet-name>DataMessage</portlet-name>
+		<display-name>DataMessage</display-name>
+		<display-name xml:lang="zh">DataMessage</display-name>
+		<portlet-class>com.ibm.datamessage.DataMessagePortlet</portlet-class>
+		<init-param>
+			<name>wps.markup</name>
+			<value>html</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+			<portlet-mode>edit</portlet-mode>
+		</supports>
+		<supported-locale>zh</supported-locale>
+		<resource-bundle>com.ibm.datamessage.nl.DataMessagePortletResource</resource-bundle>
+		<portlet-info>
+			<title>DataMessage</title>
+			<short-title>DataMessage</short-title>
+			<keywords>DataMessage</keywords>
+		</portlet-info>
+	</portlet>
+	<default-namespace>http://DataMessage/</default-namespace>
+</portlet-app>

@@ -1,0 +1,16 @@
+1.//		String name = request.getUserPrincipal().getName();
+		String name ="user1";
+		
+		2.$.getJSON("<%= basePath2 %>AppLink.json",function(result){
+		
+		3.		<link rel="stylesheet" type="text/css" href="<%=basePath %>/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="<%=basePath %>/css/index_me.css">
+		<link rel="stylesheet" href="<%=basePath %>/css/easydialog.css" />
+		<!-- µ¯¿òcss -->
+		<script type="text/javascript" src="<%=basePath %>/js/jquery1.8.3.min.js"></script>
+		<!-- bannerµ¼º½Ìõ -->
+		<script src="<%=basePath %>/js/easydialog.js"></script>
+		4.config.jsp
+		<script type="text/javascript" src="<%= basePath %>js/jquery-1.9.1.min.js"></script>
+<link rel="stylesheet" type="text/css" media="all" href="<%= basePath %>css/style.css">
+<script type="text/javascript" src="<%= basePath %>js/jquery.leanModal.min.js"></script> 

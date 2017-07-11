@@ -1,0 +1,17 @@
+
+			ContentPrototype prototype = authTemplate.getPrototype();
+			String[] componentNames = prototype.getComponentNames();
+			for (int i = 0; i < componentNames.length; i++) {
+				Map<String, Object> map = new HashMap<String, Object>();
+				String componectName = componentNames[i];
+				ContentComponent contentComponect = prototype
+						.getComponent(componectName);
+
+				String type = contentComponect.getDocumentType().getApiType()
+						.getName();
+				type = type.substring(type.lastIndexOf(".") + 1);
+				map.put("name", componectName);
+				map.put("type", type);
+			 
+				list.add(map);
+			}

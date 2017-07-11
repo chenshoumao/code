@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+encoding//WebContent/_MyAppLink/jsp/html/MyAppLinkPortletConfig.jsp=GB18030
+encoding//WebContent/_MyAppLink/jsp/html/MyAppLinkPortletView.jsp=GB18030
+encoding//src/com/ibm/entity/AppLink.java=UTF-8
+encoding//src/com/ibm/myapplink/MyAppLinkPortlet.java=UTF-8
+encoding//src/com/ibm/utils/JSONFile.java=UTF-8
