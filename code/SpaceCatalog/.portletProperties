@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><portlet-properties>
+    <portlet name="SpaceCatalog">
+        <property>
+            <name>DEFAULT_PAGE</name>
+            <value>/_SpaceCatalog/jsp/html/SpaceCatalogPortletView.jsp</value>
+        </property>
+    </portlet>
+</portlet-properties>
