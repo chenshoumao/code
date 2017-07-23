@@ -20,57 +20,66 @@
 <script type="text/javascript">
 	//声明一个数据用以存储链接
 	var arr = new Array();
+	var arrIndex = 0;
 	$(function(){	
-	var name = "<%=name%>";
-	var name_t = name.split(",");
-	
-	console.log('name : ' + name_t);
-		$.getJSON("<%= basePath2 %>AppLink.json",function(result){
-			if(result!=null&&result!=''){
-				var $ul = $(".left_three");
-				var selfconut=0;
-				for(var i=0;i<result.length;i++){
-				    	var obj=result[i];
-						arr[i] = obj.appURL;
-	                		if(name.indexOf(obj.appKey) > -1){
-	                  		$ul.append("<div class='aimg'><div class='ssimg enter' onclick='issure(\""+obj.appURL+"\",\""+obj.appName+"\")'  name='"+obj.appName+"'></div>"+obj.appName+"</div></div>");
-			                }else{
-	        			          $ul.append("<div class='aimg'><div class='ssimg'></div>"+obj.appName+"</div></div>");
-			                }
-
-				    	if(selfconut==2){
-						   selfconut=0;
-						   $ul.append("<br clear=\"both\"/>");
-					}else{
-						   selfconut++;
-					}
+		//alert("<%=basePath2%>");
+		$.ajax({
+			url:'/wps/myportal/AppData/applink/getAccount.action',
+			type:'post',
+			dataType:'json',
+			success:function(data){
+				
+				var name = data;
+				console.log('name : ' + name);
+				$.getJSON("<%= basePath2 %>AppLink.json",function(result){
+					if(result!=null&&result!=''){
+						var $ul = $(".left_three");
+						var selfconut=0;
+						for(var i=0;i<result.length;i++){
+						    	var obj=result[i];
+							arr[arrIndex] = obj.appURL;
+	                				if($.inArray(obj.appKey, name) > -1){
+	                  					$ul.append("<div id='"+arrIndex+++"' class='aimg'><div class='ssimg enter' onclick='issure(\""+obj.appURL+"\",\""+obj.appName+"\")'  name='"+obj.appName+"'></div>"+obj.appName+"</div></div>");
+							if(selfconut==2){
+						  		 selfconut=0;
+						   		$ul.append("<br clear=\"both\"/>");
+							}else{
+						  		 selfconut++;
+							}
+			              	 	}
+					 
 				}
 				console.log("ip is,<%=request.getRemoteHost()%>");
-			if("<%=request.getUserPrincipal().getName() %>" == "leader1" || '<%=request.getUserPrincipal().getName().indexOf("_user") %>' != -1)
+				if("<%=request.getUserPrincipal().getName() %>" == "leader1" || '<%=request.getUserPrincipal().getName().indexOf("_user") %>' != -1)
 				$ul.append("<div class='aimg' ><div class='ssimg enter' onclick='issure(\"/wps/myportal/cmOperation\",\"服务平台运维\")'  name='服务平台运维'></div>服务平台运维</div></div>");				
 
 				//鼠标经过图片，颜色变换
-		$(".aimg").hover(function() {
-			if($(this).children('div').hasClass('enter')){
-				$(this).find('.ssimg').css({
-					"background-position-y": "-62px",
-					"cursor":"pointer"
-				})
+				$(".aimg").hover(function() {
+					if($(this).children('div').hasClass('enter')){
+						$(this).find('.ssimg').css({
+							"background-position-y": "-62px",
+							"cursor":"pointer"
+					})
 				$(this).css({"color":"#005bc1"});
-			}
-		}, function() {
-			$(this).find('.ssimg').css({
-				"background-position-y": "0px"
-			});
+				}
+			}, function() {
+				$(this).find('.ssimg').css({
+					"background-position-y": "0px"
+				});
 			$(this).css({"color":"#666"});
 
-		    });
+		   	 });
 				//$ul.append("<li><a name='Others' target='_blank' href=''>其他</a></li>");
 			}
 			//心跳检测链接的状态，成功的话就显示，否则隐藏
-			//setInterval("HeartBeat()",1000); 
+			//setInterval("HeartBeat()",2000); 
 		});
 		
+			}
+		});
+
+	
+	
 		
 
 	});
