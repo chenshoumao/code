@@ -23,6 +23,24 @@
 		<aop:aspectj-autoproxy />
 		<!-- 支持注解配置 -->
 		<context:annotation-config />
-		<ldap:context-source id ="contextSource" url="ldap://10.161.2.111:389"  base="DC=CMZD,DC=COM" username="cn=root"  password="admin123" />
-		<ldap:ldap-template id="ldapTemplate" />
+	
+		<!-- 这里配置两个ldap的数据源，在调用的时候 用注解指定就行了 如 指定 69的ldap的方式如下
+ 		@Resource(name='ldap')
+		private LdapTempldate ldap; 
+		
+		-->		
+		<ldap:context-source id ="contextSource" url="ldap://10.161.2.68:389"  base="DC=CMZD,DC=COM" username="cn=root"  password="admin123" />
+        	<ldap:ldap-template id="ldapTemplate" />
+        
+        
+        	<bean id="ldapContextSource" class="org.springframework.ldap.core.support.LdapContextSource">
+    			<property name="url" value="ldap://10.161.2.69:389" />
+    			<property name="base" value="DC=CMZD,DC=COM" />
+    			<property name="userDn" value="cn=root" />
+   			 <property name="password" value="admin123" />
+   		</bean>
+        	<bean id="ldap" class="org.springframework.ldap.core.LdapTemplate">
+      			<property name="contextSource" ref="ldapContextSource" />
+   		 </bean> 
+        
 </beans>
