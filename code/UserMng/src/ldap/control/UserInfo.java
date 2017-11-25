@@ -38,7 +38,7 @@ public class UserInfo
     List list = this.service.getPersonDetail(user);
     if (list.size() > 1) {
       map.put("state", Boolean.valueOf(false));
-      map.put("reason", "查询到用户过多");
+      map.put("reason", "鐢ㄦ埛鏁版嵁杩囧");
     }
     else {
       User userReturn = (User)list.get(0);
